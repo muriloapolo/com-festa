@@ -1,0 +1,85 @@
+/*Responsividade para menu horizontal*/
+
+
+@media screen and (max-width: 968px) {
+
+    /* Resposividaded do menu */
+    .menu-responsivo {
+        justify-content: space-between;
+        padding: 0 30px 0 10px;
+    }
+
+    .navegacao-menu {
+        position: absolute;
+        top: -10px;
+        opacity: 0;
+    }
+
+    /*Abrir menu*/
+    .btn-responsivo-open {
+        display: block;
+    }
+
+    /* Formulário Busca Página */
+    .formulario-busca-menu {
+        display: none;
+    }
+
+    .whats-button {
+        display: none;
+    }
+
+    .bg-footer {
+        grid-template-areas: "menu-footer""loc-footer""redes-footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .redes-footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .button-whats-contato-hidden {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+}
+
+/* Menu responsividade UL*/
+.active-menu-resposive {
+    display: block;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    height: 220px;
+    justify-content: right;
+    text-align: right;
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: 1;
+
+}
+
+
+.active-menu-resposive .link-list {
+    margin: 10px 0 20px 0;
+}
+
+.active-menu-resposive .link-list .link-menu-a {
+    color: black;
+}
+
+.active-menu-resposive .link-list .link-menu-a:hover {
+    background-color: rgba(102, 101, 96, 0.068);
+}
+
+.btn-none {
+    display: none;
+}
